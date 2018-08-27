@@ -7,11 +7,13 @@ class FilmList extends Component {
     console.log('this.props.films', this.props.films)
     const filmComponents = this.props.films.map((film) => {
       return (<Film
+      title={film.title}
       director={film.director}
+      info={film.info}
+      link={film.link}
       key={film.id}
-      film={film.film}
       >
-      {film.film}
+      {film.title} - {film.director}: {film.info}. {film.link};
     </Film>);
     });
     return (
