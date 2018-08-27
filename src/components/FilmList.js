@@ -7,18 +7,19 @@ class FilmList extends Component {
     console.log('this.props.films', this.props.films)
     const filmComponents = this.props.films.map((film) => {
       return (<Film
+      img={film.img}
       title={film.title}
       director={film.director}
       info={film.info}
       link={film.link}
       key={film.id}
       >
-      {film.title} - {film.director}: {film.info}. {film.link};
+      {film.img} {film.title} - {film.director}: {film.info}. {film.link};
     </Film>);
     });
     return (
       <ul className="film-list">
-        [Now Showing]
+        Now Showing
         {filmComponents}
       </ul>
     );

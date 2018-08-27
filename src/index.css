@@ -13,22 +13,31 @@ body {
   background-color: white;
   opacity: 0.9;
   width: 70%;
-  display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  display: inline-block;
   margin: 4px 2px;
 
 }
 
 .film-box {
   background-color: white;
-  opacity: 0.9;
+  opacity: 0.75;
   width: 100%;
   font-weight: bolder;
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  flex-direction: column; */
+  flex-direction: column;
   text-align: center;
+  display: inline-block;
   margin: 4px 2px;
+}
+
+.table {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  display: inline-block;
+
 }
