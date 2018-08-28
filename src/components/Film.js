@@ -2,30 +2,26 @@ import React, { Component } from 'react';
 
 const Film = function (props){
   return(
-    <table>
 
-      <tr>
+
+    <tr>
+      <td>
         <img src="./information-icon.png" height="20" width="20"/>
-      </tr>
+      </td>
 
-      <tr>
-        <h2>{props.Films}</h2>
-      </tr>
+      <td>
+        <h1>{props.Films}</h1>
+      </td>
 
-      <tr>
-      <p>{props.children}</p>
-      </tr>
+      <td>
+        <p>{props.children}</p>
+      </td>
 
-      <tr>
-      <a href="https://www.odeon.co.uk/cinema-tickets/">Ticket Link</a>
-      </tr>
+      <td>
+        <a href="https://www.odeon.co.uk/cinema-tickets/">Ticket Link</a>
+      </td>
+    </tr>
 
-      {/* <tr>
-        <button onClick={this.link}>Ticket Office</button>
-      </tr> */}
-
-
-    </table>
   );
 }
 
